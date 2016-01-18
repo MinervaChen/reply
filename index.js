@@ -1,11 +1,15 @@
+//requires readline module
 var rl, readline = require('readline');
 
+//gets interface needed for readline
 var get_interface = function(stdin, stdout) {
   if (!rl) rl = readline.createInterface(stdin, stdout);
   else stdin.resume(); // interface exists
   return rl;
 }
 
+//takes in message and callback function
+//processes reply in get function
 var confirm = exports.confirm = function(message, callback) {
 
   var question = {
@@ -23,6 +27,7 @@ var confirm = exports.confirm = function(message, callback) {
 
 };
 
+//processes reply/answers of options with callback functions
 var get = exports.get = function(options, callback) {
 
   if (!callback) return; // no point in continuing
