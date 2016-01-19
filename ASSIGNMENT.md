@@ -22,6 +22,8 @@ The below questions should be answered (in detail!) regarding your submission.
 ##### 4. Did you receive help from any other sources (classmates, etc)? If so, please list who (be specific!). #####
 > no. 
 
-
 ##### 5. Did you encounter any problems in this assignment we should warn students about in the future? How can we make the assignment better? #####
 > Yes. The jsdocs module was confusing to figure out. Hopefully we can get it more thoroughly explained? I had trouble getting it to work. 
+
+##### Note
+> The examples that I wrote are chenm-exit-example.js and chenm-reliant-responses.js
