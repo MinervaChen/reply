@@ -40,8 +40,8 @@ var confirm = exports.confirm = function(message, callback) {
 
 /**
  * Gets and processes questions, replies and answers to error check and deliver appropriate responses
- * @param {object} options - options of questions
- * @param {string} callback - function to be activated after event has been completed
+ * @param {object} options - options & questions with options
+ * @param {function} callback - function to be activated after event has been completed
  */
 var get = exports.get = function(options, callback) {
   if (!callback) return; // no point in continuing
