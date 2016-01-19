@@ -110,7 +110,7 @@ var get = exports.get = function(options, callback) {
     var str = options[key].error ? options[key].error : 'Invalid value.';
     if (options[key].options)
         str += ' (options are ' + options[key].options.join(', ') + ')';
-        stdout.write('0o033[31m' + str + '0o033[0m' + '0on');
+        stdout.write('\033[31m' + str + '\033[0m' + '\n');
   }
 
   //displays question message given key
@@ -120,7 +120,7 @@ var get = exports.get = function(options, callback) {
       msg += text.trim() + ' ';
     if (options[key].options)
       msg += '(options are ' + options[key].options.join(', ') + ')';
-    if (msg != '') stdout.write("0o033[1m" + msg + "0o033[0m0on");
+    if (msg != '') stdout.write("\033[1m" + msg + "\033[0m\n");
   }
 
   /**
@@ -139,7 +139,7 @@ var get = exports.get = function(options, callback) {
     var keypress_callback = function(c, key) {
 
       if (key && (key.name == 'enter' || key.name == 'return')) {
-        stdout.write("0on");
+        stdout.write("\n");
         stdin.removeAllListeners('keypress');
         // stdin.setRawMode(false);
         return callback(buf);
@@ -152,7 +152,7 @@ var get = exports.get = function(options, callback) {
         buf = buf.substr(0, buf.length-1);
         var masked = '';
         for (i = 0; i < buf.length; i++) { masked += mask; }
-        stdout.write('0or0o033[2K' + prompt + masked);
+        stdout.write('\r\033[2K' + prompt + masked);
       } else {
         stdout.write(mask);
         buf += c;
