@@ -18,12 +18,12 @@ The below questions should be answered (in detail!) regarding your submission.
 ##### 3. Approximately how many hours did it take you to complete this assignment? #####
 > 4 hours
 
-
 ##### 4. Did you receive help from any other sources (classmates, etc)? If so, please list who (be specific!). #####
 > no. 
 
 ##### 5. Did you encounter any problems in this assignment we should warn students about in the future? How can we make the assignment better? #####
-> Yes. The jsdocs module was confusing to figure out. Hopefully we can get it more thoroughly explained? I had trouble getting it to work. 
+> Yes. The jsdoc module was confusing to figure out. There were some issues with "octogonal laterals", but we figured it out in office hours.
+> It would be nice if we had that explained in class :) 
 
 ##### Note
 > The examples that I wrote are chenm-exit-example.js and chenm-reliant-responses.js
